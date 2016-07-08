@@ -29,5 +29,5 @@ test_that("view rejects lists, matrices, and arrays", {
 
 test_that("view won't print when n is greater than the size", {
   expect_error(view(letters, n = 50), "n must be smaller than the length of the vector")
-  expect_error(view(mtcars, n = 32), "n must be smaller than the number of rows in data frame")
+  expect_error(view(mtcars, n = 35), "n must be smaller than the number of rows in data frame")
 })
