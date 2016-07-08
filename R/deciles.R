@@ -1,12 +1,13 @@
 #' returns the min, deciles, and max for a numeric vector
 #'
 #' \code{deciles} takes in a numeric vector and returns a named vector that
-#' contains the min, 10%-90% percentiles, and the max. Missing values are
-#' always removed
+#' contains the min, 10, 20, 30, 40, 50, 60, 70, 80, and 90th percentiles,
+#' and the max. Missing values are always removed
 #'
 #' @param x a numeric or integer vector
 #' @return a numeric vector with names for the corresponding decile
-#' @example deciles(0:100)
+#' @examples
+#' deciles(0:100)
 
 deciles <- function(x) {
   if (!is.vector(x) | is.list(x)) {
