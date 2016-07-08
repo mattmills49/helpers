@@ -9,12 +9,13 @@
 #' class, and student level. You can use \code{select_distinct} to get a data
 #' frame of the classes and school combinations.
 #'
-#' @param ... the same parameters you would pass to select
+#' @param df the data frame you would like to select from
+#' @param ... the variable names you would like to select
 #' @return a data frame containing the distinct combination of the variables
 #' that were selected
 #' @examples
 #' select_distinct(mtcars, cyl, am)
 
-select_distinct <- function(...){
-  return(dplyr::distinct(dplyr::select(...)))
+select_distinct <- function(df, ...){
+  return(dplyr::distinct(dplyr::select(df, ...)))
 }

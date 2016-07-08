@@ -4,10 +4,12 @@
 \alias{select_distinct}
 \title{select distinct combinations of multiple variables}
 \usage{
-select_distinct(...)
+select_distinct(df, ...)
 }
 \arguments{
-\item{...}{the same parameters you would pass to select}
+\item{df}{the data frame you would like to select from}
+
+\item{...}{the variable names you would like to select}
 }
 \value{
 a data frame containing the distinct combination of the variables
