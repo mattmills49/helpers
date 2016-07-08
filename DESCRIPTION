@@ -3,9 +3,12 @@ Title: Provides helper functions for common data manipulation tasks
 Version: 0.0.0.9000
 Authors@R: person("Matt", "Mills", email = "mattmills49@gmail.com", role = c("aut", "cre"))
 Description: Provides a way to mantain common custom functions for data analysis
-Depends: R (>= 3.2.3)
+Depends:
+    R (>= 3.2.3)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Suggests:
+    testthat
 Import: dplyr
+RoxygenNote: 5.0.1
