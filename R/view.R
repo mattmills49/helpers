@@ -11,14 +11,14 @@
 #' view(letters)
 #' view(mtcars, n = 4)
 #'
-#' @importFrom magrittr `%>%`
+# #' @importFrom magrittr `%>%`
 
 view <- function(x, n = 6) {
   if ("data.frame" %in% class(x)) {
     if (n > nrow(x)) {
       stop("n must be smaller than the number of rows in data frame")
     } else {
-      x %>% dplyr::sample_n(n) %>% dplyr::tbl_df() %>% print
+      print(dplyr::tbl_df(dplyr::sample_n(x, n)))
     }
   }
   else if (is.vector(x) & !is.list(x)) {
