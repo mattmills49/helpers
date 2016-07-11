@@ -11,7 +11,7 @@
 #' view(letters)
 #' view(mtcars, n = 4)
 #'
-# #' @importFrom magrittr `%>%`
+
 
 view <- function(x, n = 6) {
   if ("data.frame" %in% class(x)) {
