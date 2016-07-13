@@ -7,6 +7,7 @@
 #' @param x A data frame or vector
 #' @param n the number of rows or values to print
 #' @return the printed values
+#' @export
 #' @examples
 #' view(letters)
 #' view(mtcars, n = 4)

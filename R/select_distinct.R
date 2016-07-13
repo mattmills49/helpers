@@ -13,6 +13,7 @@
 #' @param ... the variable names you would like to select
 #' @return a data frame containing the distinct combination of the variables
 #' that were selected
+#' @export
 #' @examples
 #' select_distinct(mtcars, cyl, am)
 

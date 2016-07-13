@@ -9,6 +9,7 @@
 #' Defaults to \code{FALSE}
 #' @return a named vector with the column names as the names and the number
 #' or percentage of missing values as the values
+#' @export
 #'
 #' @examples
 #' set.seed(12345)

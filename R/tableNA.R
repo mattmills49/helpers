@@ -2,6 +2,7 @@
 #'
 #' @param ... the object you want to use the \code{table} function on
 #' @return a \code{table}
+#' @export
 #' @examples
 #' car_copy <- mtcars
 #' car_copy$cyl[c(2, 7, 15)] <- NA

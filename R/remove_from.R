@@ -8,6 +8,8 @@
 #' @param vec the vector to remove values from
 #' @param value the value to remove. The value can either be a single value or
 #' a vector of values
+#' @export
+#' @return the original vector with the values removed
 #'
 #'
 

@@ -6,6 +6,7 @@
 #'
 #' @param x a numeric or integer vector
 #' @return a numeric vector with names for the corresponding decile
+#' @export
 #' @examples
 #' deciles(0:100)
 
