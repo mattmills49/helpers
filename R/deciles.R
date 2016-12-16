@@ -11,15 +11,12 @@
 #' deciles(0:100)
 
 deciles <- function(x) {
-  if (!is.vector(x) | is.list(x)) {
-    stop("x must be a vector")
-  } else if (class(x) != "integer" && class(x) != "numeric") {
-    stop("x must be a numeric or integer vector")
-  } else if (length(x) <= 1) {
-    stop("x must have more than one element")
-  } else {
-    v <- c(min(x, na.rm = T), quantile(x, probs = seq(.1, .9, .1), na.rm = T), max(x, na.rm = T))
-    names(v)[c(1,11)] <- c("min", "max")
-    return(v)
-  }
+  assertthat::assert_that(is.vector(x))
+  assertthat::assert_that(class(x) == "integer" || class(x) == "numeric")
+  assertthat::assert_that(length(x) > 1)
+  
+  
+  v <- c(min(x, na.rm = T), quantile(x, probs = seq(.1, .9, .1), na.rm = T), max(x, na.rm = T))
+  names(v)[c(1,11)] <- c("min", "max")
+  return(v)
 }
