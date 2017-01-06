@@ -22,6 +22,6 @@ sample_groups <- function(.data, ..., n = 6){
   distinct_values <- dplyr::distinct(.data, ...) %>%
     dplyr::sample_n(size = n) %>%
     dplyr::inner_join(.data, ., by = merge_cols)
-  print("we")
+  
   return(distinct_values)
 }
